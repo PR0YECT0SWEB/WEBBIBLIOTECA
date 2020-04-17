@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Categoria;
 
-/**
+/** 
  *
  * @author D3RL3
  */
@@ -43,7 +43,7 @@ public class CategoriaDao {
             PreparedStatement st = con.prepareStatement(sql);
             //st.setString(1, cat.getNombre());
             ResultSet rs = st.executeQuery();
-            ArrayList<Categoria> lista = null;
+            ArrayList<Categoria> lista = new ArrayList<>();
             Categoria cat;
             while(rs.next()){
                 cat = new Categoria();
